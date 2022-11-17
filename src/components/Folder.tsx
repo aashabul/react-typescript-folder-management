@@ -6,7 +6,7 @@ import "../styles/folder.css";
 interface Props {
   item: {
     name: string;
-    child?: [{ name?: string; child?: [{ name: string }] }];
+    child?: any[]; //[{ name?: string; child?: any[] }]; //any[];
     role: string;
   };
 }
@@ -18,6 +18,13 @@ export const Folder: FC<Props> = ({ item }) => {
     setIsClicked(!isClicked);
     // console.log(item.name);
     // console.log(childs);
+
+    childs?.map((x) => {
+      x.child ? console.log(x.child) : console.log("no folder");
+      // x.child?.map((y) => {
+      //   console.log(y.name);
+      // });
+    });
   };
   return (
     <>
