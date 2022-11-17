@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Root",
+    "child": [
+      {
+        "name": "new folder",
+        "child": [{ "name": "movies" }, { "name": "Documents" }]
+      },
+      {
+        "name": "Folder 1",
+        "child": [
+          {
+            "name": "Images"
+          }
+        ]
+      },
+      {
+        "name": "Folder 2"
+      },
+      {
+        "name": "Folder 3",
+        "child": [
+          {
+            "name": "Docs"
+          }
+        ]
+      },
+      {
+        "name": "Folder 1",
+        "child": [
+          {
+            "name": "another folder"
+          }
+        ]
+      }
+    ],
+    "role": "root"
+  }
+]

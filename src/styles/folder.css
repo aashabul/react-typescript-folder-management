@@ -1,0 +1,57 @@
+.folder,.name,.action{
+    display: flex;
+    flex-direction: row;
+}
+
+.folder{
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.name, .action{
+    gap: 10px;
+}
+
+.arrow{
+    rotate: 45deg;
+}
+
+.rotate{
+    rotate: 135deg;
+}
+
+.add-rotate{
+    animation: add-rotate 1s ease-in-out;
+}
+
+.hidden{
+    display: none;
+}
+
+.display{
+    display: block;
+}
+
+.box{
+    margin:10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #4285F4;
+    width:50%;
+    color:white;
+    font-size: 18px;
+}
+
+/* .box:last-of-type{
+    padding-bottom: 100px;
+} */
+
+.gray{
+    background-color: gray;
+}
+
+
+@keyframes add-rotate{
+    100%{transform: rotate(360deg);}
+}
